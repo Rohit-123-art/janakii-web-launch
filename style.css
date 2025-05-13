@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.lang-switch {
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.lang-btn {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.ad-scroll {
+  overflow: hidden;
+  background: #f4f4f4;
+  border-top: 1px solid #ccc;
+}
+
+.ad-track {
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+}
+
+.ad-item {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#gallery {
+  padding: 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-images img {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#fees {
+  text-align: center;
+  padding: 30px;
+}
+
+.payments img {
+  height: 60px;
+  margin: 10px;
+}
+
+.school-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.school-info img {
+  height: 40px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Initially English visible */
+.en {
+  display: block;
+}
+.ne {
+  display: none;
+}
